@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Add Job</title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+        <link rel="stylesheet" href="search.css">
+
+
+        <link rel="stylesheet" href ="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-
+              awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com./bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="stylesheet" href="verticalNavBar.css">
+        <link rel="stylesheet" href="navigationBar2.css">
+
+
+
+
+
+    </head>
+  <body style="background-image: none;">
+
+        
+        <div class="navBar">
+            <a href="index.html">LOGOUT</a> 
+            <a href="#">ABOUT US</a>
+            <a href="#">SERVICES</a> 
+            <a href="homePage.jsp"><i class="fa fa-home"></i>HOME</a> 
+            <img class="logo" src = "logo.jpg" >
+
+        </div>
+
+       
+        <h1 style="text-align: center">Enter Job Data</h1>
+        <hr>
+        <form action="addJob" >
+            <table style="margin-left: 400px; width: 900px " >
+
+                <tr>
+                    <td>  <h3>Basic Info</h3></td>
+                    <td>
+                        <table>
+
+                            <tr>
+
+                                <td>Title<input class="form-control m-input" type="text" name="title" value="" required/></td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <br>
+                                </td>
+                            </tr>
+                            <tr> 
+
+
+                                <td> Job Category<select name="category" required class="form-control m-input">
+                                        <option value="Sales"> Sales </option>
+                                        <option value="Marketing"> Marketing </option>
+                                        <option value="Management"> Management </option>
+                                        <option value="IT"> IT </option>
+                                        <option value="HumanResources"> HR </option>
+                                    </select></td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <br>
+                                </td>
+                            </tr>
+
+                            <tr> 
+
+
+                                <td>   Job Type<select name="type" required class="form-control m-input">
+                                        <option value="Internship"> Internship </option>
+                                        <option value="Part_Time"> Part_Time </option>
+                                        <option value="Full_Time"> Full_Time </option>
+                                        <option value="FreeLancing"> FreeLancing </option>
+                                        <option value="Contract"> Contract </option>
+                                    </select></td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <br>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Description<textarea name="description" rows="4" cols="40" class="form-control m-input"></textarea></td>
+
+                            </tr>
+
+                        </table>
+
+                    </td>
+                </tr>
+
+
+                <tr><td><br></td></tr>     
+                <tr><td><hr></td><td><hr></td></tr> 
+                <tr><td><br></td></tr> 
+                <tr>
+                    <td><h3> Required  Education    </h3></td>
+
+
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    Required Degree <select name="degree" required class="form-control m-input">
+                                        <option value="Not_Specified"> Not_Specified </option>
+                                        <option value="Undergraduate"> Undergraduate </option>
+                                        <option value="Bachelor"> Bachelor </option>
+                                        <option value="Master"> Master </option>
+                                        <option value="PhD"> PhD </option>
+                                    </select>
+                                </td>
+
+                            </tr>
+                            <tr>
+
+                                <td>Field<input class="form-control m-input" type="text" name="field" value="" required/></td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    Experience Years <select name="years" required class="form-control m-input">
+                                        <option value="0"> 0 </option>
+                                        <option value="1"> 1 </option>
+                                        <option value="2"> 2 </option>
+
+                                        <option value="3"> 3 </option>
+                                        <option value="4"> 4 </option>
+
+                                        <option value="5"> 5 </option>
+                                        <option value="6"> 6 </option>
+
+                                        <option value="7"> 7 </option>
+                                        <option value="8"> 8 </option>
+                                        <option value="9"> 9 </option>
+                                        <option value="10"> 10 </option>
+                                        <option value="11"> over ten years </option>
+
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>GPA
+                                    <input id="GPA" type="text" name="GPA" value="" class="form-control m-input" onkeyup="validateGPA()" required/>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div id="GPAValidation" style="color: red;">
+
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+
+
+
+                    </td>
+
+                </tr>
+                <tr><td><hr></td><td><hr></td></tr> 
+                <tr><td><br></td></tr>    
+                <tr><td><h3 style="text-align: center"> Skills</h3></td><td>
+
+
+                        <div id="inputFormSkill">
+                            <table style=" width:300px; ">
+                                <tr>
+                                    <td>
+                                        <input  type="text" name="skills" class="form-control m-input" placeholder="Enter a Skill" autocomplete="off" required>
+
+                                    </td>
+                                    <td>
+                                        <div class="input-group-append">
+
+                                            <button style="background-color: white; color: coral; width: 100px;" id="removeSkill" type="button"  class="form-control m-input" disabled>Remove</button>
+                                        </div>
+                                    </td>
+
+
+                                </tr>
+                            </table> 
+                            <div class="input-group mb-3">
+
+
+                            </div>
+                        </div>
+
+                        <div id="newSkill"></div>
+                        <br>
+                        <button style="background-color: white; color:blue" id="addSkill"  class="form-control m-input" type="button">Add Extra Skill Requirement</button>
+
+
+                    </td></tr>
+
+
+                <tr><td><hr></td><td><hr></td></tr> 
+                <tr><td><br></td></tr>
+                <tr><td></td><td><button style="font-size: 30px; color: darkslateblue; border: none;" type="submit" onclick="">Add Job</button></td></tr>
+
+            </table>
+            <br>
+            <br>
+
+
+        </form>
+        <script type="text/javascript">
+
+            // add row
+            $("#addSkill").click(function () {
+                var html = '';
+                html += '<div id="inputFormSkill"><table style=" width:300px; ">';
+                html += '<tr><td> <input  type="text" name="skills" class="form-control m-input" placeholder="Enter a Skill" autocomplete="off" required></td><td>';
+                html += '<div class="input-group-append"><button style="background-color: white; color:red; width: 100px;" id="removeSkill" type="button"  class="form-control m-input" >Remove</button></div>';
+                html += '</td></tr></table> <div class="input-group mb-3"></div></div>';
+
+                $('#newSkill').append(html);
+            });
+
+            // remove row
+            $(document).on('click', '#removeSkill', function () {
+                $(this).closest('#inputFormSkill').remove();
+            });
+            function validateGPA()
+            {
+                var x = document.getElementById("GPA").value;
+
+                if (x < 0 || x > 4 || Number(x) != x)
+                {
+                    document.getElementById("GPAValidation").innerHTML = " Not valid GPA, please enter it between 0 and 4";
+                } else {
+                    document.getElementById("GPAValidation").innerHTML = "";
+                }
+            }
+
+
+
+
+        </script>
+    </body>
+</html>

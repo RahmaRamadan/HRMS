@@ -1,0 +1,16 @@
+SMAP
+deductions_005f1_jsp.java
+JSP
+*S JSP
+*F
++ 0 deductions_1.jsp
+deductions_1.jsp
+*L
+1,135:54
+136,7:190
+142,2:197
+144,7:199,3
+151,2:220
+152,6:222
+157,55:228
+*E

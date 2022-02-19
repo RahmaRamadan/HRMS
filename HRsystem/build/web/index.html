@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="navigationBar2.css">
+        <link rel="stylesheet" href="search.css">
+
+        <title>HR System</title>
+
+ 
+    </head>
+
+    <body  style="background-image: url('hiring.jpg'); ">
+
+        <div class="navBar">
+
+            <a href="#">ABOUT US</a>
+            <a href="#">SERVICES</a> 
+            <a href="index.html"><i class="fa fa-home"></i>HOME</a> 
+            <a   href="careers.jsp">CAREERS</a>
+            <a href="empLogin.jsp">LOGIN</a>
+            <img class="logo" src = "logo.jpg" >
+
+        </div>
+
+
+
+
+
+        
+      
+        <script>
+            function myFunction() {
+                var input, filter, ul, li, a, i;
+                input = document.getElementById("mySearch");
+                filter = input.value.toUpperCase();
+                ul = document.getElementById("myMenu");
+                li = ul.getElementsByTagName("li");
+
+
+                for (i = 0; i < li.length; i++) {
+
+                    a = li[i].getElementsByTagName("a")[0];
+                    if ((a.innerHTML.toUpperCase().indexOf(filter) === 1) || (filter === "")) {
+
+                        li[i].style.display = "";
+                    } else {
+                        li[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

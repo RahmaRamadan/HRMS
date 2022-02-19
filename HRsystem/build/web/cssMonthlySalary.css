@@ -1,0 +1,270 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14-Jul-2021, 22:10:01
+    Author     : dell
+*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+
+body {
+    background-image: url('p4.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family:"Open Sans", Helvetica, Arial, sans-serif;
+    font-weight:300;
+    font-size: 12px;
+    line-height:30px;
+    color:#777;
+    background:window;
+
+}
+
+* {
+    margin:0;
+    padding:0;
+    user-select: none;   
+    font-family: 'Poppins', sans-serif;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-font-smoothing:antialiased;
+    -moz-font-smoothing:antialiased;
+    -o-font-smoothing:antialiased;
+    font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+}
+
+.navBar {
+    overflow: hidden;
+    padding-right: 20px;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.navBar a {
+    float: right;
+    color: #0065A2;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navBar a:hover {
+    /* background-color: #0065A2;
+     color: whitesmoke;*/
+    background: none;
+    color: #0492C2;
+}
+
+.navBar a.back {
+    color: cadetblue;
+    float: left;
+}
+.logo {
+    color: white;
+    float: left;
+    width: 120px;
+    height: 70px;
+}
+.btn-suc{
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    background: #eae9e9;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: left 0.4s ease;
+}
+.btn-suc.click{
+    left: 220px;
+}
+.btn-suc span{
+    color: #0492C2;
+    font-size: 28px;
+    line-height: 40px;
+}
+.btn-suc.click span:before{
+    content: '\f00d';
+}
+.sidebar{
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    left: -250px;
+    background: white;
+    transition: left 0.4s ease;
+}
+.sidebar.show{
+    left: -30px;
+}
+.sidebar .text{
+    color: #1f6d8f;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 65px;
+    text-align: center;
+    background: white;
+    letter-spacing: 1px;
+}
+.text{
+    background: gray;
+}
+nav ul{
+    background: #f7f7f7;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+nav ul li{
+    line-height: 60px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+nav ul li:last-child{
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+nav ul li a{ /*el font nfso*/
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 40px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+}
+nav ul li.active a{ /*el bta3a el nzla*/
+    color: black;
+    background: white;
+    border-left-color: black;
+}
+nav ul li a:hover{
+    background: #1f6d8f; /*de bta3t el t7ded 3l klam*/
+    color: white;
+}
+nav ul ul{
+    position: static;
+    display: none;
+}
+nav ul .recru-show.show{
+    display: block;
+}
+nav ul .affairs-show.show1{
+    display: block;
+    font-size: 12px;
+}
+nav ul .eva-show.show2{
+    display: block;
+}
+nav ul .pay-show.show3{
+    display: block;
+}
+nav ul .emp-show.show4{
+    display: block;
+}
+
+nav ul .pro-show.show6{
+    display: block;
+}
+nav ul ul li{
+    line-height: 42px;
+    border-top: none;
+}
+nav ul ul li a{
+    font-size: 17px;
+    color: #e6e6e6;
+    padding-left: 80px;
+}
+nav ul li.active ul li a{
+    color: black;
+    padding-left: 5px;
+    background: white;
+    border-left-color: transparent;
+}
+nav ul ul li a:hover{
+    color: black!important;
+    background: #1f6d8f!important;
+}
+nav ul li a span{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: transform 0.4s;
+}
+nav ul li a span.rotate{
+    transform: translateY(-50%) rotate(-180deg);
+}
+.pro-btn{
+    font-size: 13px;
+}
+.affairs-btn{
+    font-size: 13px;
+}
+.eva-btn{
+    font-size: 13px;
+}
+.payroll-btn{
+    font-size: 13px;
+}
+.recru-btn{
+    font-size: 13px;
+}
+.employee-btn{
+    font-size: 13px;
+}
+
+
+#empDetails{
+    font-size:40px;
+    color:#0492C2;
+    font-style:inherit;
+    text-align:inherit;
+} 
+
+
+
+.container {
+    max-width:800px;
+    width:100%;
+    margin:0 auto;
+    position:relative;
+}
+
+
+
+.btn-success1{
+    background-color:#0492C2;
+}
+
+.btn-success1:hover{
+    background-color:cornflowerblue;
+}
+
+.form-group{
+    font-size: 15px;
+    font-style:normal;
+}
+.table-hover{
+    color: #241571;
+    font-size: 17px;
+    font-family:sans-serif;
+}
+.btn-success{
+
+    background-color:#0492C2; /*#2832C2;*/
+}
+
+.btn-success:hover{
+    background-color:cornflowerblue;
+}

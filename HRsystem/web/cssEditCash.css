@@ -1,0 +1,40 @@
+body {
+  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family:"Open Sans", Helvetica, Arial, sans-serif;
+    font-weight:300;
+    font-size: 12px;
+    line-height:30px;
+    color:#777;
+    background:window;
+
+}
+
+* {
+    margin:0;
+    padding:0;
+    user-select: none;   
+    font-family: 'Poppins', sans-serif;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-font-smoothing:antialiased;
+    -moz-font-smoothing:antialiased;
+    -o-font-smoothing:antialiased;
+    font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+}
+.table-hover{
+    color: #241571;
+    font-size: 17px;
+    font-family:sans-serif;
+}
+.btn-success{
+    background-color:#0492C2; /*#2832C2;*/
+}
+
+.btn-success:hover{
+    background-color:cornflowerblue;
+}

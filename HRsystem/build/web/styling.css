@@ -1,0 +1,71 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 28, 2020, 9:50:48 AM
+    Author     : maria
+*/
+
+.bar {
+  overflow: hidden;  
+  padding: 0px 100px;
+  font-family: Helvetica;
+  
+
+}
+
+.bar a {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.dropdown {
+  float: right;
+  padding: 0px 100px;
+}
+
+.dropdown .dropbutton {
+  font-size: 28px;  
+  color: #1f6d8f;
+  padding: 8px 10px;
+  
+  font-family: inherit;
+  align-content: right;
+  text-align: center;
+                background: white;
+                border: none;
+}
+
+
+
+.dropdown-content {
+  display: none;
+  background-color: white;
+  min-width: 150px;
+  position: absolute;
+  z-index: 1;
+ 
+}
+
+.dropdown-content a {
+  float: none;
+  color: #1f6d8f;
+  padding: 15px 15px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+}
+
+.show {
+  display: block;
+}
+.button {
+    font-size: 24px; color: white; background-color: #1f6d8f;border-radius: 8px;padding: 5px;border: none;
+} 
+

@@ -1,0 +1,12 @@
+SMAP
+checkConnection_jsp.java
+JSP
+*S JSP
+*F
++ 0 checkConnection.jsp
+checkConnection.jsp
+*L
+5,16:48
+25,25:68
+49,4:93
+*E

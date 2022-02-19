@@ -1,0 +1,137 @@
+ 
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family:"Open Sans", Helvetica, Arial, sans-serif;
+    font-weight:300;
+    font-size: 12px;
+    padding-left: 10px;
+    line-height:30px;
+    color:#777;
+    background:window;
+
+} 
+* {
+    margin:0;
+    padding:0;
+    user-select: none;   
+    font-family: 'Poppins', sans-serif;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-font-smoothing:antialiased;
+    -moz-font-smoothing:antialiased;
+    -o-font-smoothing:antialiased;
+    font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+}
+.navBar {
+    overflow: hidden;
+    padding-right: 20px;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.navBar a {
+    float: right;
+    color: #0065A2;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navBar a:hover {
+    /* background-color: #0065A2;
+     color: whitesmoke;*/
+    background: none;
+    color: #0492C2;
+}
+
+.navBar a.back {
+    color: cadetblue;
+    float: left;
+}
+.logo {
+    color: white;
+    float: left;
+    width: 120px;
+    height: 70px;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    min-width: 500px;
+    padding-left: 500px;
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-top: -60%;
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    color: #0492C2;
+    padding: 20px 40px;
+    text-align: left;
+
+    font-weight: bold;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+
+
+}
+
+.btn-print{
+    font-size: 28px;
+
+    margin-top: -60%;
+    margin: 0;
+    color: #0492C2;
+
+    position: absolute;
+    top: 75%;
+    left: 80%;
+
+}
+.back
+{
+    font-size: 28px;
+
+    margin-top: -60%;
+    margin: 0;
+    color: #0492C2;
+    min-width: 100px;
+    position: absolute;
+    top: 82%;
+    left: 80%;
+}
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}

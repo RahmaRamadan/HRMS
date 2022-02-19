@@ -1,0 +1,18 @@
+SMAP
+deductionRewardData_jsp.java
+JSP
+*S JSP
+*F
++ 0 deductionRewardData.jsp
+deductionRewardData.jsp
+*L
+5,97:61
+102,33:159
+134:192
+135:193,5
+136:198
+137,3:199,5
+140,3:214
+180,50:255
+229,4:305
+*E

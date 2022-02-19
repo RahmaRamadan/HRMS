@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html>
+    <head>
+        <title>Apply</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="navigationBar2.css">
+        <link rel="stylesheet" href="forms.css">
+
+
+        <link rel="stylesheet"
+              href ="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-
+              awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com./bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    </head>
+
+    <body style="background-image: none;">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <div class="navBar">
+
+            <a href="#">ABOUT US</a>
+            <a href="#">SERVICES</a> 
+            <a href="index.html">HOME</a>
+            <a   href="careers.jsp">CAREERS</a>
+            <img class="logo" src = "logo.jpg" >
+
+        </div>
+
+
+        <h2 style="text-align: center; position: sticky;">Tell Us About You</h2>
+        <br>
+        <hr>
+        <br>
+
+        <form action="applyJob" >
+            <table style=" margin-left: 400px; width: 900px;"> 
+                <tr>
+                    <td><h3 style="text-align: center" >Personal Info    </h3></td>
+
+                    <td>
+                        <table style=" width:300px; " >
+
+                            <tr>
+                                <td>First Name</td>
+                                <td><input  type="text" name="fName" value="" class="form-control m-input" required /></td>
+                            </tr>
+                            <tr>
+                                <td>Last Name</td>
+                                <td> <input  type="text" name="lName" value="" class="form-control m-input" required /></td>
+                            </tr>
+                            <tr>
+                                <td>     Email</td>
+                                <td><input type="text" id="email" name="email" value=""  class="form-control m-input"  required /></td>
+
+                                <td><p id="result"></p></td>
+                            </tr>
+                            <tr>
+                                <td>    Phone</td>
+                                <td><input type="text" id="phone" name="phone" value="" class="form-control m-input" required /></td>
+                             <td><p id="result2"></p></td>
+                            </tr>
+
+                            <tr>
+                                <td>    Gender</td>
+                                <td><select name="gender" class="form-control m-input">
+                                        <option value="male">male</option>
+                                        <option value="female">female</option>
+                                    </select></td>
+                            </tr>
+
+
+                        </table>
+                    </td>
+                </tr>    
+                <tr><td><hr></td></tr>
+                <tr><td><br></td></tr>
+                <tr> <td> <h3 style="text-align: center">Resume</h3></td>
+                    <td>  <input type="file" name="resume" class="form-control m-input" required /> </td>
+
+
+                </tr>
+                <tr><td><hr></td></tr>
+                <tr><td><br></td></tr>
+                <tr><td><h3 style="text-align: center">Education</h3></td>
+                    <td><table style=" width:300px; ">
+
+                            <tr><td>Degree </td>
+
+                                <td>
+                                    <select  name="degree" class="form-control m-input" required>
+                                        <option value="Not_Specified"> Not_Specified </option>
+                                        <option value="Undergraduate"> Undergraduate </option>
+                                        <option value="Bachelor"> Bachelor </option>
+                                        <option value="Master"> Master </option>
+                                        <option value="PhD"> PhD </option>
+                                    </select>
+                                </td></tr>
+                            <tr><td>In field</td><td><input  type="text" name="field" value="" class="form-control m-input" required /></td></tr>
+                            <tr><td>GPA</td><td><input id="GPA"  type="text" name="GPA" value="" class="form-control m-input" onkeyup="validateGPA()" required /></td></tr>
+                            <tr>
+                                <td>
+                                    <div id="GPAValidation" style="color: red;">
+
+                                    </div>
+                                </td>
+                            </tr>
+                        </table></td></tr>
+
+                <tr><td><hr></td></tr>
+                <tr><td><br></td></tr>
+                <tr><td>
+
+                <tr><td><h3 style="text-align: center">Experience</h3></td>
+                    <td>
+
+                        <div id="inputFormExperience">
+                            <table style=" width:500px; ">
+                                <tr>
+                                    <td>Job Title </td>
+                                    <td><input  type="text" name="titles" class="form-control m-input" placeholder="Enter title" required></td>
+                                    <td> <div class = "input-group-append" >
+                                            <button style="background-color: white; color: red" id = "removeExperience" type = "button" class = "btn btn-danger" disabled> Remove </button>
+                                        </div></td>
+
+                                </tr>
+
+                                <tr><td>  Type </td>
+                                    <td>           
+                                        <select name="type" class="form-control m-input" required>
+                                            <option value="Internship"> Internship </option>
+                                            <option value="Part_Time"> Part_Time </option>
+                                            <option value="Full_Time"> Full_Time </option>
+                                            <option value="FreeLancing"> FreeLancing </option>
+                                            <option value="Contract"> Contract </option>
+                                        </select></td></tr>
+                                <tr><td>Years Duration</td>
+                                    <td> <select  name="years" class="form-control m-input" required>
+                                            <option value="1"> <1 </option>
+                                            <option value="2"> 1 </option>
+                                            <option value="3"> 2 </option>
+                                            <option value="4"> 3 </option>
+                                            <option value="5"> 4 </option>
+                                            <option value="6"> 5 </option>
+                                            <option value="7"> 6 </option>
+                                            <option value="8"> 7 </option>
+                                            <option value="9"> 8 </option>
+                                            <option value="10"> 9 </option>
+                                            <option value="11"> 10 </option>
+                                            <option value="12"> >10 </option>
+
+                                        </select></td>
+                                </tr>
+                            </table> 
+                            <div class="input-group mb-3">
+
+
+                            </div>
+                        </div>
+
+                        <div id="newExperience"></div>
+                        <br>
+                        <button style="background-color: white; color:blue" id="addExperience" type="button" class="btn btn-info">Add Extra Experience</button>
+
+
+                    </td></tr>
+                <tr><td><hr></td></tr>
+                <tr><td><br></td></tr>
+                <tr><td>
+                <tr><td><h3 style="text-align: center"> Skills</h3></td><td>
+
+
+                        <div id="inputFormSkill">
+                            <table style=" width:300px; ">
+                                <tr>
+                                    <td>
+                                        <input  type="text" name="skills" class="form-control m-input" placeholder="Enter a Skill" autocomplete="off" required>
+
+                                    </td>
+                                    <td>
+                                        <div class="input-group-append">
+
+                                            <button style="background-color: white; color:red" id="removeSkill" type="button" class="btn btn-danger" disabled>Remove</button>
+                                        </div>
+                                    </td>
+
+
+                                </tr>
+                            </table> 
+                            <div class="input-group mb-3">
+
+
+                            </div>
+                        </div>
+
+                        <div id="newSkill"></div>
+                        <br>
+                        <button style="background-color: white; color:blue" id="addSkill" type="button" class="btn btn-info">Add Extra Skill Requirement</button>
+
+
+                    </td></tr>
+
+
+
+                <tr><td><hr></td></tr>
+                <tr><td><br></td></tr>
+
+
+
+            </table>
+            <p  style='text-align: center' >By Applying to this job, you are agreeing to share your personal data in our database.</p>
+            <button style='margin-left: 600px; font-size: 30px;' type="submit" onclick=""> Submit Application</button>
+
+        </form>
+        <p style="text-align: center"> Copyrights @  2021</p>
+        <script type="text/javascript">
+            // add row
+            $("#addExperience").click(function () {
+                var html = '';
+                html += '<div id="inputFormExperience" class="input-group mb-3">';
+                html += '<br>';
+                html += ' <table style=" width:500px; "><tr><td> Job Title  </td>';
+                html += '<td> <input type = "text" name = "titles" class = "form-control m-input" placeholder = "Enter title"  required > </td><td>';
+                html += ' <div class = "input-group-append" ><button style="background-color: white; color: red" id = "removeExperience" type = "button" class = "btn btn-danger" > Remove </button>';
+                html += ' </div></td></tr><tr> <td> Type </td><td><select name = "type" class="form-control m-input" required ><option value = "Internship" > Internship </option>';
+                html += '<option value = "Part_Time" > Part_Time </option><option value = "Full_Time" > Full_Time </option>';
+                html += ' <option value = "FreeLancing" > FreeLancing </option><option value = "Contract" > Contract </option>';
+                html += '</select></td> </tr><tr> <td> Years Duration</td><td> <select name = "years" class="form-control m-input" required > <option value="1"> <1 </option>';
+                html += '<option value="2"> 1 </option> <option value="3"> 2 </option> <option value="4"> 3 </option>';
+                html += '<option value="5"> 4 </option> <option value="6"> 5 </option> <option value="7"> 6 </option>';
+                html += '<option value="8"> 7 </option> <option value="9"> 8 </option> <option value="10"> 9 </option>';
+                html += ' <option value="11"> 10 </option> <option value="12"> >10 </option> </select></td>';
+                html += '</tr> </table> </div>';
+                $('#newExperience').append(html);
+            });
+            // remove row
+            $(document).on('click', '#removeExperience', function () {
+                $(this).closest('#inputFormExperience').remove();
+            });
+            $("#addSkill").click(function () {
+                var html = '';
+                html += '<div id="inputFormSkill">';
+                html += '<div class="input-group mb-3">';
+                html += '<br>';
+                html += '<table style=" width:300px;"><tr><td> <input type="text" name="skills" class="form-control m-input" placeholder="Enter a Skill" autocomplete="off">'
+                html += '  </td><td>';
+                html += '<div class="input-group-append">';
+                html += ' <button style="background-color: white; color:red" id="removeSkill" type="button" class="btn btn-danger">Remove</button></td></tr></table>';
+                html += '</div>';
+                html += '</div>';
+                $('#newSkill').append(html);
+            });
+            // remove row
+            $(document).on('click', '#removeSkill', function () {
+                $(this).closest('#inputFormSkill').remove();
+            });
+            function validateGPA()
+            {
+                var x = document.getElementById("GPA").value;
+                if (x < 0 || x > 4 || Number(x) != x)
+                {
+                    document.getElementById("GPAValidation").innerHTML = " Not valid GPA, please enter it between 0 and 4";
+                } else {
+                    document.getElementById("GPAValidation").innerHTML = "";
+                }
+            }
+            function validateEmail_(email) {
+                var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                return re.test(email);
+            }
+
+            function validateEmail() {
+                var $result = $("#result");
+                var email = $("#email").val();
+                $result.text("");
+                if (validateEmail_(email)) {
+                    $result.text(" Valid");
+                    $result.css("color", "green");
+                } else {
+                    $result.text("  Invalid");
+                    $result.css("color", "red");
+                }
+                return false;
+            }
+           
+            
+            
+
+            $("#email").on("input", validateEmail);
+           
+        </script>
+
+    </body>
+</html>
+
